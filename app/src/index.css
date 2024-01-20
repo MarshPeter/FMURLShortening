@@ -1,0 +1,54 @@
+/* mobile first desgin */
+:root {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.1;
+    font-weight: 500;
+
+    /* colours */
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+    --white: white;
+}
+
+* {
+    /* stables */
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link-button {
+    background-color: var(--cyan);
+    padding: 0.6rem 1rem;
+    border-radius: 36px;
+    color: var(--white);
+}
+
+.basic-text {
+    color: var(--grayish-violet);
+}
+
+header,
+.hero__container,
+.informational__container,
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .link-button:hover {
+        opacity: 0.5;
+    }
+}

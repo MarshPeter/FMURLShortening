@@ -1,0 +1,26 @@
+.header-container {
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__hamburger {
+    color: var(--grayish-violet);
+    border: none;
+    background: none;
+}
+
+@media only screen and (min-width: 900px) {
+    .header__logo {
+        height: 2rem;
+    }
+
+    .header-container {
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+}
